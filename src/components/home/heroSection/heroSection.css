@@ -1,0 +1,170 @@
+/* start ==================================================== */
+/* start =========== HeroSection Component Styles =========== */
+/* start ==================================================== */
+.special-text-dark {
+    position: relative !important;
+    color: var(--background-tertiary);
+}
+
+.special-text-dark::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 15px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 570 15" fill="none" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M571 13C571 13 525.866 3.8811 496.092 2.3135C448.769 -0.178077 430.713 13 375.538 13C329.891 13 306.026 2.58959 260.836 2.3135C212.473 2.01803 186.305 13 137.94 13C91.1232 13 71.502 1.12451 40.7947 2.31345C16.7654 3.24382 1 8.00646 1 8.00646" stroke="%23FF4B26" stroke-width="5"/></svg>') repeat-x;
+    background-size: 100% 100%;
+}
+
+.section-home {
+    position: relative;
+    padding-top: 100px;
+    background-color: var(--background-primary);
+}
+
+/* Pointer decorative images */
+.section-home .right-point {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 15%;
+    right: 10%;
+}
+
+.section-home .left-point {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 55%;
+    left: 10%;
+}
+
+/* Button container styles */
+.section-home .buttons-container {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+
+    .section-home {
+        padding-top: 50px;
+    }
+
+    .section-home .buttons-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .section-home .buttons-container .btn {
+        width: 100%;
+    }
+
+    .section-home .left-point {
+        top: 65%;
+    }
+
+    .section-home .right-point {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 1%;
+        right: 10%;
+    }
+}
+
+/* Small screen specific styles */
+@media (max-width: 380px) {
+    .section-home .title-container {
+        display: none;
+    }
+
+    .section-home .title-small-container {
+        display: block !important;
+    }
+
+    .section-home .small-line-text-dark {
+        position: relative !important;
+        color: var(--background-tertiary);
+    }
+
+    .section-home .small-line-text-2 {
+        position: relative !important;
+        color: var(--background-tertiary);
+    }
+
+    .section-home .small-line-text-dark::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 100%;
+        height: 15px;
+        background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 570 15" fill="none" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M571 13C571 13 525.866 3.8811 496.092 2.3135C448.769 -0.178077 430.713 13 375.538 13C329.891 13 306.026 2.58959 260.836 2.3135C212.473 2.01803 186.305 13 137.94 13C91.1232 13 71.502 1.12451 40.7947 2.31345C16.7654 3.24382 1 8.00646 1 8.00646" stroke="%23FF4B26" stroke-width="5"/></svg>') repeat-x;
+        background-size: 100% 100%;
+    }
+
+    .section-home .small-line-text-2::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 100%;
+        height: 15px;
+        background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 570 15" fill="none" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M571 13C571 13 525.866 3.8811 496.092 2.3135C448.769 -0.178077 430.713 13 375.538 13C329.891 13 306.026 2.58959 260.836 2.3135C212.473 2.01803 186.305 13 137.94 13C91.1232 13 71.502 1.12451 40.7947 2.31345C16.7654 3.24382 1 8.00646 1 8.00646" stroke="%23FF4B26" stroke-width="11"/></svg>') repeat-x;
+        background-size: 100% 100%;
+    }
+
+    .section-home .small-line-text-2::after {
+        stroke-width: 10;
+    }
+}
+
+/* end ==================================================== */
+/* end =========== HeroSection Component Styles =========== */
+/* end ==================================================== */
+
+/* start ========================================================= */
+/* start =========== HeroSectionImage Component Styles =========== */
+/* start ========================================================= */
+
+/* Image container and responsive image styles */
+.section-home .section-image-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+}
+
+.section-home .responsive-image {
+    position: relative;
+    z-index: 2;
+    width: 70% !important;
+    height: auto;
+    padding-top: 4rem;
+}
+
+/* Background decorative images */
+.section-home .background-img-left {
+    position: absolute;
+    height: auto;
+    top: 80%;
+    left: 0;
+    z-index: 1;
+    transform: translateY(-20%);
+}
+
+.section-home .background-img-right {
+    position: absolute;
+    height: auto;
+    top: 30%;
+    right: 0;
+}
+
+/* end ========================================================= */
+/* end =========== HeroSectionImage Component Styles =========== */
+/* end ========================================================= */

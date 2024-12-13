@@ -1,0 +1,253 @@
+.sectionPackages {
+    padding-block: 70px;
+    background-color: var(--background-secondary);
+    position: relative;
+}
+
+.pack-right-point {
+    position: absolute;
+    top: 3%;
+    right: 10%;
+}
+
+.pack-left-point {
+    position: absolute;
+    top: 30%;
+    left: 4%;
+}
+
+.title-container-package p {
+    width: 45%;
+}
+
+.toggle p {
+    transition: all 0.3s;
+}
+
+.toggleBtn {
+    background-color: var(--background-secondary);
+    border: 1px solid var(--background-tertiary);
+    width: 55px;
+    height: 30px;
+    transition: all 0.3s;
+}
+
+.toggleBtn div {
+    background-color: var(--background-tertiary);
+    width: 20px;
+    height: 20px;
+    transition: all 0.3s;
+}
+
+.translate-x {
+    transform: translateX(125%);
+}
+
+.translate-x-0 {
+    transform: translateX(0);
+}
+
+.packageCards span,
+.packageCard p,
+.packageCard h5 {
+    font-family: var(--poppins);
+}
+
+.packageCard {
+    background-color: var(--background-primary);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+}
+
+.packageCard.first {
+    background-color: #FFF3E1;
+}
+
+.packageCard.middle {
+    background-color: #FFE7E3;
+    position: relative;
+}
+
+.packageCard.last {
+    background-color: #EEE2FF;
+}
+
+.mostPopular {
+    position: absolute;
+    top: -14px;
+    left: 0;
+}
+
+.mostPopular span {
+    background-color: #FFA412;
+    color: var(--background-secondary);
+    font-size: 16px;
+}
+
+.packageCard.first .packageCardHead {
+    border-bottom: 1.5px solid #FFA412;
+}
+
+.packageCard.middle .packageCardHead {
+    border-bottom: 1.5px solid var(--background-quaternary);
+}
+
+.packageCard.last .packageCardHead {
+    border-bottom: 1.5px solid #674387;
+}
+
+.packageCard.first button,
+.packageCard.last button {
+    border: 2px solid var(--background-tertiary);
+    color: var(--background-tertiary);
+}
+
+.packageCard.middle button {
+    border: 2px solid var(--background-tertiary);
+    background-color: var(--background-tertiary);
+    color: var(--background-secondary);
+}
+
+.packageCard h5 {
+    font-size: 16px;
+}
+
+
+/* Questions */
+.sectionQuestions {
+    padding-block: 100px;
+    background-color: var(--background-primary);
+    overflow: hidden;
+}
+
+.sectionQuestions .questions {
+    position: relative;
+}
+
+.pricing-img-left {
+    position: absolute;
+    bottom: 0%;
+    left: -3%;
+}
+
+.pricing-img-right {
+    position: absolute;
+    top: 0;
+    right: -3%;
+}
+
+.questionContent {
+    background-color: var(--background-secondary);
+    z-index: 1;
+    transition: all 0.3s;
+}
+
+.questionNumber {
+    color: var(--background-tertiary);
+    font-size: 30px;
+    width: 36px;
+}
+
+.questionTitle {
+    font-size: 18px;
+    width: 80%;
+}
+
+.questionContent svg {
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.questionContent svg.rotate {
+    transform: rotate(180deg);
+}
+
+.questionContent svg.rotate-0 {
+    transform: rotate(0deg);
+}
+
+.questionText {
+    width: 90%;
+    overflow: "hidden";
+    transition: all 0.3s;
+}
+
+.questionText.block {
+    display: block;
+    height: auto;
+}
+
+.questionText.none {
+    display: none;
+    height: 0;
+}
+
+@media (max-width: 992px) {
+
+    .title-container-package p {
+        width: 100%;
+    }
+}
+
+@media (max-width: 910px) {
+    .pack-right-point {
+        position: absolute;
+        top: 1%;
+        right: 10%;
+    }
+
+    .pack-left-point {
+        position: absolute;
+        top: 17%;
+        left: 4%;
+    }
+
+    .pricing-img-left {
+        position: absolute;
+        bottom: 0;
+        left: -8%;
+    }
+
+    .pricing-img-right {
+        position: absolute;
+        top: 0;
+        right: -8%;
+    }
+}
+
+@media (max-width: 768px) {
+    .questionTitle {
+        font-size: 14px;
+    }
+
+    .questionNumber {
+        font-size: 25px;
+        width: 25px;
+    }
+}
+
+@media (max-width: 430px) {
+    .title-container-package {
+        display: none !important;
+    }
+
+    .title-small-container-package {
+        display: block !important;
+    }
+
+    .small-line-text {
+        position: relative !important;
+        color: var(--background-tertiary);
+        font-size: 33px;
+    }
+
+    .small-line-text::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 100%;
+        height: 15px;
+        background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 15" fill="none" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M571 13C571 13 525.866 3.8811 496.092 2.3135C448.769 -0.178077 430.713 13 375.538 13C329.891 13 306.026 2.58959 260.836 2.3135C212.473 2.01803 186.305 13 137.94 13C91.1232 13 71.502 1.12451 40.7947 2.31345C16.7654 3.24382 1 8.00646 1 8.00646" stroke="%23FCC100" stroke-width="8"/></svg>') repeat-x;
+        background-size: 100% 100%;
+    }
+}

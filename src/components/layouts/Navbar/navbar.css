@@ -1,0 +1,53 @@
+.nav {
+  width: 100%;
+  font-size: 16px !important;
+  background-color: #f4eef7 !important;
+  margin: 0px !important;
+}
+
+.navbarc1 {
+  padding-left: 0;
+  padding-right: 0;
+  background-color: #f4eef7 !important;
+  margin: 0px !important;
+  min-width: 100%;
+}
+
+.nav-menu {
+  gap: 20px;
+}
+
+.custom-toggle {
+  border: none; /* Removes any default border */
+  background: transparent; /* Removes background */
+  box-shadow: none; /* Ensures no shadow effect */
+  padding: 0; /* Removes padding */
+}
+
+.custom-toggle:focus,
+.custom-toggle:active {
+  outline: none; /* Removes focus outline */
+  box-shadow: none; /* Ensures no focus shadow */
+}
+
+.navbar-divider {
+  width: 100%;
+  height: 1.5px; /* Adjust based on your design */
+  background-color: #ccc; /* Divider color */
+  display: inline-block; /* Ensure it aligns with other inline elements */
+}
+
+.navbar-logo {
+  width: 117px;
+  height: 70px;
+}
+
+
+
+@media screen and (max-width: 425px) {
+    .navbar-logo {
+        width: 76px;
+        height: 50px;
+      }
+      
+}

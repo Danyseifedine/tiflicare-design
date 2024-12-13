@@ -1,0 +1,90 @@
+.c1 {
+  background-color: #dcdcdc !important;
+}
+
+.testimonialscarddesign {
+  border-radius: 10px !important;
+  padding: 25px;
+  text-align: left;
+  font-family: "Poppins";
+}
+.testimonialscarddesign img {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+}
+
+.profilerow {
+  display: flex;
+  align-items: center;
+}
+.testimonialscarddesign h6 {
+  margin: 0px !important;
+  margin-bottom: 0px !important;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.redsectiontitle {
+  font-size: 56px;
+  color: white;
+}
+
+.small-red-section {
+  padding-block: 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.small-red-left-img {
+  position: absolute;
+  bottom: 8%;
+  left: 4%;
+  width: 372px;
+  height: 118px;
+}
+
+.small-red-right-img {
+  position: absolute;
+  top: 5%;
+  right: 4%;
+  width: 481px;
+    height: 49px;
+}
+
+.point-right {
+  position: absolute;
+  width: 34px;
+  height: 36px;
+  top: 15%;
+  left: 10%;
+}
+
+@media (max-width: 768px) {
+  .point-right {
+    width: 22px;
+    height: 24px;
+    transform: translateY(370%);
+    
+  }
+  .small-red-right-img {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 326px;
+    height: 33px;
+  }
+  .small-red-left-img {
+    margin-top: -400px !important;
+    
+    width: 252px;
+    height: 80px;
+    transform: translateY(-30%);
+  }
+
+.small-red-section {
+  padding-block: 100px;
+  position: relative;
+  overflow: hidden;
+}
+}

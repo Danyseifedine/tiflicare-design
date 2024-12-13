@@ -1,0 +1,49 @@
+.footer {
+    background-color: var(--background-secondary);
+}
+
+.footer .container {
+    position: relative;
+}
+
+button {
+    background-color: var(--background-secondary);
+    border: 2px solid hsl(0, 0%, 85%);
+}
+
+.small_btn_span {
+    font-size: 12px;
+}
+
+.bold_btn_span {
+    font-size: 16px;
+}
+
+.media {
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    background-color: var(--background-primary);
+}
+
+.media svg, .media svg path {
+    fill: var(--background-tertiary);
+}
+
+.footerUpBtn {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: #FF4B26;
+    top: -30px;
+    right: 0;
+}
+
+@media (max-width: 553px) {
+    .footerUpBtn {
+        width: 40px;
+        height: 40px;
+        top: -20px;
+        right: 20px;
+    }
+}

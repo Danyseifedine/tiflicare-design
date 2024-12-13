@@ -1,0 +1,233 @@
+.second-section {
+    background-color: var(--background-secondary);
+    position: relative;
+    overflow: hidden;
+    padding-top: 150px !important;
+    padding-bottom: 150px !important;
+}
+
+/* Left side content styling */
+.second-section .content-left {
+    padding-right: 2rem;
+}
+
+.second-section .title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.second-section .description {
+    font-family: var(--poppins);
+    font-size: 16px;
+    line-height: 1.6;
+    color: black !important;
+    max-width: 90%;
+}
+
+.second-section .demo-button {
+    width: 200px !important;
+}
+
+.second-section .demo-button-desktop {
+    width: 200px !important;
+}
+
+/* Right side image styling */
+.second-section .image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-section .img-sec {
+    position: absolute;
+    right: -10px;
+}
+
+.second-section .main-image {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 2;
+}
+
+/* Decorative circles */
+.second-section .yellow-circle {
+    position: absolute;
+    left: 10%;
+    bottom: 0%;
+    z-index: 1;
+}
+
+.second-section .purple-circle {
+    position: absolute;
+    left: 67%;
+     bottom: -0%;
+    z-index: 1;
+}
+
+.second-section .red-circle {
+    position: absolute;
+    left: 83%;
+     top: 4%;
+    z-index: 1;
+}
+
+
+.second-section .main-image-mobile {
+    display: none;
+}
+
+.second-section .demo-button-mobile {
+    display: none;
+}
+
+.second-section .special-text::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 15px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 570 15" fill="none" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M571 13C571 13 525.866 3.8811 496.092 2.3135C448.769 -0.178077 430.713 13 375.538 13C329.891 13 306.026 2.58959 260.836 2.3135C212.473 2.01803 186.305 13 137.94 13C91.1232 13 71.502 1.12451 40.7947 2.31345C16.7654 3.24382 1 8.00646 1 8.00646" stroke="%23FFD700" stroke-width="5"/></svg>') repeat-x;
+    background-size: 100% 100%;
+}
+
+/* Responsive styles */
+@media (max-width: 991px) {
+    .second-section {
+        padding-top: 60px !important;
+    }
+
+    .second-section .content-left {
+        text-align: center;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        margin-bottom: 0rem !important;
+    }
+
+    .second-section .main-image {
+        position: relative;
+        display: none;
+    }
+
+    .second-section .demo-button-desktop {
+        display: none;
+    }
+
+    .second-section .demo-button-mobile {
+        display: block;
+    }
+
+    .second-section .img-sec {
+        position: relative;
+        right: 0;
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .second-section .img-mobile-sec {
+        display: block !important;
+        width: 100%;
+        max-width: 480px;
+        margin: 0 auto;
+    }
+
+    .second-section .main-image-mobile {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .second-section .content-left {
+        text-align: center;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        margin-bottom: 3rem;
+    }
+
+    .second-section .description {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        color: #000 !important;
+        font-size: 15px;
+        text-align: left;
+    }
+
+    .second-section .title {
+        font-size: 36px;
+    }
+
+    .second-section .image-container {
+        margin-top: 2rem;
+    }
+
+    .second-section .demo-button {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .second-section .red-circle {
+        display: none;
+    }
+
+    .second-section .yellow-circle {
+        position: absolute;
+        left: 1%;
+        bottom: 12%;
+        z-index: 1;
+    }
+    
+    .second-section .purple-circle {
+        position: absolute;
+        left: 83%;
+         bottom: 53%;
+        z-index: 1;
+    }
+
+    .second-section {
+        padding: 0 0;
+    }
+
+    .second-section .title {
+        font-size: 28px;
+    }
+
+    .second-section .yellow-circle,
+    .second-section .red-circle {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .second-section .yellow-circle {
+        position: absolute;
+        left: 1%;
+        bottom: 0%;
+        z-index: 1;
+    }
+    
+    .second-section .purple-circle {
+        position: absolute;
+        left: 83%;
+        bottom: 48%;
+        z-index: 1;
+    }
+
+
+    .second-section {
+        background-color: var(--background-secondary);
+        position: relative;
+        overflow: hidden;
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
+    }
+}

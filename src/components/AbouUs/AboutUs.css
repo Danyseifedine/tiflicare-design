@@ -1,0 +1,233 @@
+.aboutusfirstsectionimage {
+  max-width: 100%; /* Restrict image width to the column */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Avoid extra whitespace */
+}
+
+.aboutusparagraphstyle {
+  font-size: 16px;
+  font-family: "Poppins";
+}
+
+.aboutusredchip {
+  width: 34px;
+  height: 36px;
+}
+.aboutuspurplechip {
+  margin-top: -190px;
+  margin-left: -70px;
+}
+
+.aboutsUsSection2 {
+  position: relative;
+}
+
+.aboutUs-section2-img-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.aboutUs-section2-img-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.small-red-section {
+  padding-block: 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.small-red-left-img {
+  position: absolute;
+  bottom: 8%;
+  left: 4%;
+  width: 372px;
+  height: 118px;
+}
+
+
+.small-red-right-img {
+  position: absolute;
+  top: 5%;
+  right: 4%;
+  width: 481px;
+    height: 49px;
+}
+.point-right {
+  position: absolute;
+  width: 34px;
+  height: 36px;
+  top: 15%;
+  left: 10%;
+}
+
+.aboutusyellowchip {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+@media (min-width: 1400px) and (max-width: 1439px) {
+  .aboutuspurplechip {
+    margin-top: -190px;
+    margin-left: -40px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1255px) {
+  .aboutuspurplechip {
+    margin-top: -190px;
+    margin-left: -40px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1075px) {
+  .aboutuspurplechip {
+    margin-top: -190px;
+    margin-left: -20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .aboutuspurplechip {
+    margin-top: 0px !important;
+    margin-left: -10px;
+  }
+}
+
+.section2cardstitle {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "MyFont";
+}
+
+.aboutUsSection2Parent {
+  overflow: hidden;
+}
+
+.about-us-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  z-index: 3;
+}
+
+.about-us-card-icon {
+  width: 86px;
+  height: 80px;
+}
+.aboutussection2title {
+  font-size: 56px;
+}
+@media (max-width: 530px) {
+  .aboutusredchip {
+    width: 24px;
+    height: 26px;
+  }
+  .about-us-card-icon {
+    width: 64px;
+    height: 60px;
+  }
+  .aboutussection2title {
+    font-size: 32px;
+  }
+
+  .aboutUs-section2-img-left {
+    bottom: 3%;
+    left: -10%;
+  }
+
+  .aboutUs-section2-img-right {
+    top: 3%;
+    right: -10%;
+  }
+}
+
+.firsttopdesignchip {
+  width: 209px;
+  height: 61px;
+  transform: translateY(200%);
+}
+
+.aboutspecial-text {
+  color: var(--background-tertiary);
+  position: relative;
+}
+
+/* Title underline decoration */
+.aboutspecial-text::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 15px;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 570 15" fill="none" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M571 13C571 13 525.866 3.8811 496.092 2.3135C448.769 -0.178077 430.713 13 375.538 13C329.891 13 306.026 2.58959 260.836 2.3135C212.473 2.01803 186.305 13 137.94 13C91.1232 13 71.502 1.12451 40.7947 2.31345C16.7654 3.24382 1 8.00646 1 8.00646" stroke="%23FCC100" stroke-width="12"/></svg>')
+    repeat-x;
+
+  background-size: 100% 100%;
+}
+
+.aboutusyellowchip {
+  width: 25px;
+  height: 26px;
+}
+@media (max-width: 768px) {
+  .aboutusyellowchip {
+    width: 18px;
+    height: 19px;
+    transform: translate(-2400%, -1000%);
+  }
+}
+@media (max-width: 553px) {
+  .aboutusyellowchip {
+    width: 18px;
+    height: 19px;
+    transform: translate(-2000%, -1000%);
+  }
+}
+
+@media (max-width: 465px) {
+  .aboutusyellowchip {
+    width: 18px;
+    height: 19px;
+    transform: translate(-1500%, -1150%);
+  }
+}
+
+@media (max-width: 377px) {
+  .aboutusyellowchip {
+    width: 18px;
+    height: 19px;
+    transform: translate(-1300%, -1250%);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .point-right {
+    width: 22px;
+    height: 24px;
+    transform: translateY(370%);
+    
+  }
+  .small-red-right-img {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 326px;
+    height: 33px;
+  }
+  .small-red-left-img {
+    position: absolute;
+    bottom: 8%;
+    left: 4%;
+    width: 252px;
+    height: 80px;
+  }
+  
+
+
+}

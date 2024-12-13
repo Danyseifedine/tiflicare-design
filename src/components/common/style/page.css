@@ -1,0 +1,491 @@
+/* Title underline decoration */
+.special-text::after {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 570 15" fill="none" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M571 13C571 13 525.866 3.8811 496.092 2.3135C448.769 -0.178077 430.713 13 375.538 13C329.891 13 306.026 2.58959 260.836 2.3135C212.473 2.01803 186.305 13 137.94 13C91.1232 13 71.502 1.12451 40.7947 2.31345C16.7654 3.24382 1 8.00646 1 8.00646" stroke="%23FCC100" stroke-width="5"/></svg>') repeat-x;
+}
+
+.huge-font.special-text-big, .special-text.special-text-big {
+    font-size: 51px;
+}
+
+/* ============================= section1 style ============================ */
+.section1 {
+    padding-block: 100px;
+    background-color: var(--background-secondary);
+    position: relative;
+}
+
+/* Pointer decorative images */
+.auto-right-point {
+    width: 34px;
+    height: 36px;
+    position: absolute;
+    top: 8%;
+    right: 30%;
+}
+
+.auto-left-point {
+    width: 20px;
+    height: 22px;
+    position: absolute;
+    top: 53%;
+    left: 1%;
+}
+
+/* ============================= section2 style ============================ */
+.section2 {
+    padding-block: 100px;
+    background-color: var(--background-primary);
+    overflow: hidden;
+}
+
+.section2 .cards {
+    position: relative;
+}
+
+.section2 .cardBilling {
+    background-color: var(--background-secondary);
+    width: 364px;
+    height: 315px;
+    z-index: 1;
+}
+
+.section2 .cardEngagement {
+    background-color: var(--background-secondary);
+    width: 364px;
+    height: 339px;
+    z-index: 1;
+}
+
+.section2 .cardManagement {
+    background-color: var(--background-secondary);
+    width: 558px;
+    height: 267px;
+    z-index: 1;
+}
+
+.section2-img-left {
+    position: absolute;
+    bottom: 0%;
+    left: -5%;
+}
+
+.section2-img-right {
+    position: absolute;
+    top: 0%;
+    right: -5%;
+}
+
+
+
+/* ============================= Why style ============================ */
+.section-why {
+    padding-block: 100px;
+    background-color: var(--background-secondary);
+    overflow: hidden;
+}
+
+.whyContent {
+    position: relative;
+}
+
+.section-why .responsive-img {
+    width: 650px;
+    height: 550px;
+}
+
+.whyCard {
+    background-color: var(--background-secondary);
+    width: 544px;
+    box-shadow: 0px 0px 20px 10px var(--background-primary);
+}
+
+.whyNumber {
+    width: 54px;
+    height: 50px;
+    background-color: var(--background-primary);
+    color: var(--background-tertiary);
+    font-size: 20px;
+}
+
+.whyCard p {
+    font-size: 16px;
+}
+
+.why-right-point {
+    width: 24px;
+    height: 26px;
+    position: absolute;
+    bottom: 20%;
+    right: -40px;
+}
+
+/* ============================= section3 style ============================ */
+
+.section3 {
+    padding-block: 100px;
+    background-color: var(--background-primary);
+    overflow: hidden;
+}
+
+.section3Content {
+    position: relative;
+}
+
+.section3Content .responsive-image {
+    width: 419px !important;
+    height: 345px !important;
+    padding-top: 0;
+    z-index: 1;
+}
+
+.section3-img-left {
+    position: absolute;
+    bottom: 0;
+    left: -6%;
+}
+
+.section3-img-right {
+    position: absolute;
+    top: 3%;
+    right: -6%;
+}
+
+/* ============================= Talk style ============================ */
+
+.section-requestTalk {
+    padding-block: 85px;
+    background: url('/images/red-background.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.requestTalkContent {
+    position: relative;
+}
+
+.talk-img-right {
+    position: absolute;
+    top: -50px;
+    right: 70px;
+}
+
+.talk-huge-font {
+    font-size: 35px;
+    color: var(--background-secondary);
+}
+
+.talkImage {
+    border: 12px solid var(--background-secondary);
+    width: 460px;
+}
+
+.talkImage img {
+    width: 100%;
+    height: 100%;
+}
+
+.section-requestTalk button {
+    background-color: #FCC100;
+    color: black;
+    padding-inline: 40px;
+    font-size: 15px;
+}
+
+
+/* =============================================== Responsive styles ================================== */
+@media (max-width: 1203px) {
+    .section-why .responsive-img {
+        width: 550px;
+        height: 500px;
+    }
+
+    .whyCard {
+        width: 400px;
+    }
+
+    .talkImage {
+        width: 350px;
+    }
+
+    .talk-huge-font {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 1199px) {
+
+    .section1-img {
+        width: 65%;
+    }
+
+    /* Pointer decorative images */
+    .auto-right-point {
+        top: 5%;
+        right: 8%;
+    }
+
+    .auto-left-point {
+        top: 80%;
+        left: 2%;
+    }
+
+    .why-right-point {
+        bottom: 20%;
+        right: 5%;
+    }
+}
+
+@media (max-width: 992px) {
+    .section-requestTalk {
+        background-position-x: 76%;
+        background-position-y: -40px;
+    }
+
+    .talkImage {
+        width: 100%;
+    }
+
+    .text_div {
+        width: 100%;
+    }
+
+    .section-requestTalk button {
+        width: 100%;
+    }
+
+    .talk-huge-big-div {
+        display: none;
+    }
+
+    .talk-huge-small-div {
+        display: block !important;
+    }
+
+    .talk-huge-font {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 769px) {
+    .title-container-engag {
+        display: none;
+    }
+    .title-small-container-engag {
+        display: block !important;
+    }
+
+    .small-line-text,
+    .small-line-text-2 {
+        position: relative !important;
+        color: var(--background-tertiary);
+    }
+
+    .small-line-text::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 100%;
+        height: 15px;
+        background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 15" fill="none" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M571 13C571 13 525.866 3.8811 496.092 2.3135C448.769 -0.178077 430.713 13 375.538 13C329.891 13 306.026 2.58959 260.836 2.3135C212.473 2.01803 186.305 13 137.94 13C91.1232 13 71.502 1.12451 40.7947 2.31345C16.7654 3.24382 1 8.00646 1 8.00646" stroke="%23FCC100" stroke-width="8"/></svg>') repeat-x;
+        background-size: 100% 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .section1-img {
+        width: 80%;
+    }
+
+    .section-why .responsive-img {
+        width: 400px;
+        height: 450px;
+    }
+
+    .whyCard {
+        width: 100%;
+    }
+
+    .why-right-point {
+        bottom: 20%;
+        right: -10px;
+    }
+
+    .section3Content .responsive-image {
+        width: 350px !important;
+        height: 300px !important;
+    }
+
+    .talkImage {
+        width: 100%;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .section-why .responsive-img {
+        width: 350px;
+        height: 400px;
+    }
+
+    .section2-img-left {
+        bottom: 2%;
+    }
+
+    .section2-img-right {
+        top: 2%;
+    }
+
+    .section2 .cardBilling {
+        height: fit-content;
+    }
+
+    .section2 .cardEngagement {
+        height: fit-content;
+    }
+
+    .section2 .cardManagement {
+        height: fit-content;
+    }
+
+    .why-right-point {
+        bottom: 20%;
+        right: 0;
+    }
+
+    .section3-img-left {
+        bottom: 3%;
+    }
+
+    .talkImage {
+        width: 100%;
+    }
+
+    .section2 .cardBilling {
+        width: 95%;
+    }
+
+    .section2 .cardEngagement {
+        width: 95%;
+    }
+
+    .section2 .cardManagement {
+        width: 95%;
+    }
+}
+
+@media (max-width: 380px) {
+
+    .section1-img {
+        width: 100%;
+    }
+
+    .section-why .responsive-img {
+        width: 250px;
+        height: 300px;
+    }
+
+    .section3Content .responsive-image {
+        width: 250px !important;
+        height: 200px !important;
+    }
+
+    .talkImage {
+        width: 100%;
+    }
+
+    .title-container {
+        display: none;
+    }
+
+    .title-small-container {
+        display: block !important;
+    }
+
+    .div-text-280 {
+        display: none;
+    }
+
+    .div-text {
+        display: block;
+    }
+
+    
+    .small-line-text,
+    .small-line-text-2 {
+        position: relative !important;
+        color: var(--background-tertiary);
+    }
+
+    .small-line-text::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 100%;
+        height: 15px;
+        background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 15" fill="none" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M571 13C571 13 525.866 3.8811 496.092 2.3135C448.769 -0.178077 430.713 13 375.538 13C329.891 13 306.026 2.58959 260.836 2.3135C212.473 2.01803 186.305 13 137.94 13C91.1232 13 71.502 1.12451 40.7947 2.31345C16.7654 3.24382 1 8.00646 1 8.00646" stroke="%23FCC100" stroke-width="8"/></svg>') repeat-x;
+        background-size: 100% 100%;
+    }
+
+}
+
+@media (max-width: 282px) {
+
+    .small-line-text,
+    .small-line-text-2 {
+        position: relative !important;
+        color: var(--background-tertiary);
+    }
+
+    .small-line-text::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 100%;
+        height: 15px;
+        background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 15" fill="none" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M571 13C571 13 525.866 3.8811 496.092 2.3135C448.769 -0.178077 430.713 13 375.538 13C329.891 13 306.026 2.58959 260.836 2.3135C212.473 2.01803 186.305 13 137.94 13C91.1232 13 71.502 1.12451 40.7947 2.31345C16.7654 3.24382 1 8.00646 1 8.00646" stroke="%23FCC100" stroke-width="8"/></svg>') repeat-x !important;
+        background-size: 100% 100%;
+    }
+
+    .div-text {
+        display: none;
+    }
+
+    .div-text-280 {
+        display: block;
+    }
+
+    .small-line-text-280,
+    .small-line-text-2 {
+        position: relative !important;
+        color: var(--background-tertiary);
+    }
+
+    .small-line-text-280::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 100%;
+        height: 15px;
+        background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 15" fill="none" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M571 13C571 13 525.866 3.8811 496.092 2.3135C448.769 -0.178077 430.713 13 375.538 13C329.891 13 306.026 2.58959 260.836 2.3135C212.473 2.01803 186.305 13 137.94 13C91.1232 13 71.502 1.12451 40.7947 2.31345C16.7654 3.24382 1 8.00646 1 8.00646" stroke="%23FCC100" stroke-width="8"/></svg>') repeat-x;
+        background-size: 100% 100%;
+    }
+
+    .small-line-text-2::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 100%;
+        height: 15px;
+        background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 570 15" fill="none" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M571 13C571 13 525.866 3.8811 496.092 2.3135C448.769 -0.178077 430.713 13 375.538 13C329.891 13 306.026 2.58959 260.836 2.3135C212.473 2.01803 186.305 13 137.94 13C91.1232 13 71.502 1.12451 40.7947 2.31345C16.7654 3.24382 1 8.00646 1 8.00646" stroke="%23FCC100" stroke-width="11"/></svg>') repeat-x;
+        background-size: 100% 100%;
+    }
+
+    .small-line-text-2::after {
+        stroke-width: 10;
+    }
+}
